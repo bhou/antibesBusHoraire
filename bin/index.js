@@ -16,5 +16,5 @@ var rule = new schedule.RecurrenceRule();
 rule.hour = 10;
 rule.minute = 0;
 var job = schedule.scheduleJob(rule, function() {
-  spider.run();
+  spider.run([]);
 });
